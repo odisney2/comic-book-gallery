@@ -29,11 +29,11 @@
 
         </div>
         <h5>Description</h5>
-        <p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives...<strong>will Peter Parker?</strong></p>
+        <div>@Html.Raw(Model.DescriptionHtml)</div>
     </div>
     <div class="col-md-6">
-        <img src="/Images/the-amazing-spider-man-700.jpg"
-             alt="The Amazing Spider-Man #700" class="img-responsive" />
+        <img src="/Images/@Model.CoverImageFileName"
+             alt="@Model.DisplayText" class="img-responsive" />
     </div>
 </div>
 
